@@ -33,7 +33,7 @@ ul, li {
 
 /*Шапка*/
 
-.header>div {
+.header{
   background-image: url(../img/header.png);
   padding: 180px 0;
   text-align: center;
@@ -52,28 +52,20 @@ ul, li {
 }
 
 .button {
+  text-transform: uppercase;
+  cursor: pointer;
   padding: 10px 25px;
   margin: 0 10px;
   color: #fff;
   transition: 0.3s;
+  background: #00897b;
+  border: 2px solid #00897b;
   }
 
-  .button_empty {
+  .button:hover {
     background: transparent;
     border: 2px solid white;
   }
-
-  .button_full {
-    background: #00897b;
-    border: 2px solid #00897b;
-  }
-
-  .button_empty:hover,
-  .button_full:hover {
-    border: 2px dotted white;
-    background: #04574e;
-  }
-
   /*О нас*/
 
   .about {
@@ -101,3 +93,54 @@ ul, li {
     margin-top: 30px;
     margin-bottom: 20px;
   }
+
+  .services {
+    color: black;
+    background: #e4fdf9;
+    text-align: center;
+    padding-top: 165px;
+    padding-bottom: 125px;
+  }
+  .our_card {
+    background: white;
+    padding: 50px 40px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    }
+
+    .our_card:hover {
+      background: #00897b;
+      color: white;
+      box-shadow: 0px 10px 12px -3px rgba(0,0,0,0.26);
+    }
+    .our_card:hover .icon {
+      color: white;
+    }
+    .our_card:hover .button-services{
+      border: 2px solid white;
+      color: white;
+      transition: 0.3s;
+    }
+    .icon {
+      transition: 0.3s;
+      font-size: 60px;
+      color: black;
+    }
+    .button-services {
+      text-transform: uppercase;
+      border: 2px solid black;
+      background: transparent;
+      padding: 10px 12px 10px;
+      font-family: 'Open Sans Semibold';
+    }
+    .button-services:hover {
+      cursor: pointer;
+    }
+
+    /*Портфолио*/
+
+    .portfolio {
+      padding-top: 120px;
+      padding-bottom: 135px;
+      text-align: center;
+    }
